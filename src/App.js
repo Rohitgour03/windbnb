@@ -72,10 +72,16 @@ function App() {
     <React.Fragment>
       <Modal
         showModel={showModel}
-        setShowModel={setShowModel}
-      >
+        setShowModel={setShowModel}>
           { width < breakpoint ? 
-            <MobileModal /> : 
+            <MobileModal
+              locationValue={locationValue}
+              adultCount={adultCount}
+              childrenCount={childrenCount}
+              setLocationValue={setLocationValue}
+              setAdultCount={setAdultCount}
+              setChildrenCount={setChildrenCount}
+              formSubmitHandler={formSubmitHandler}  /> : 
             <DesktopModel
               locationValue={locationValue}
               adultCount={adultCount}

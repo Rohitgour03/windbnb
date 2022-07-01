@@ -30,6 +30,7 @@ const Guests = (props) => {
                 <button 
                     className='flex justify-center items-center w-6 h-6 border border-[#828282] rounded-[4px] hover:cursor-pointer'
                     name='adultCount'
+                    type='button'
                     id='decreaseCount'
                     onClick={handleCount}>
                     <FontAwesomeIcon 
@@ -42,6 +43,7 @@ const Guests = (props) => {
                 <button
                     className='flex justify-center items-center w-6 h-6 border border-[#828282] rounded-[4px] hover:cursor-pointer'
                     name='adultCount'
+                    type='button'
                     id='increaseCount'
                     onClick={handleCount}> 
                     <FontAwesomeIcon className='text-[#333333]' icon={faPlus} />
@@ -56,6 +58,7 @@ const Guests = (props) => {
                     className='flex justify-center items-center w-6 h-6 border border-[#828282] rounded-[4px] hover:cursor-pointer'
                     name='childrenCount'
                     id='decreaseCount'
+                    type='button'
                     onClick={handleCount}>
                     <FontAwesomeIcon 
                         className={`${props.childrenCount === 0 ? "text-zinc-400": "text-[#333333]"}`} 
@@ -66,6 +69,7 @@ const Guests = (props) => {
                 </div>
                 <button
                     className='flex justify-center items-center w-6 h-6 border border-[#828282] rounded-[4px] hover:cursor-pointer'
+                    type='button'
                     name='childrenCount'
                     id='increaseCount'
                     onClick={handleCount}> 

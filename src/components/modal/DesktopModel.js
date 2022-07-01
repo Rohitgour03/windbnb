@@ -8,8 +8,6 @@ const DesktopModel = (props) => {
     const [isLocationFocus, setIsLocationFocus] = React.useState(false);
     const [isGuestFocus, setIsGuestFocus] = React.useState(false);
 
-    
-
     function locationInputHandler(event){
         props.setLocationValue(event.target.value)
     }
@@ -22,7 +20,7 @@ const DesktopModel = (props) => {
         }
     }
 
-
+  
   return (
     <React.Fragment>
         <div className='max-w-7xl w-11/12 my-20 mx-auto font-mulish'>
